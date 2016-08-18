@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>tree demo</title>
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <link href="tree.css" rel="stylesheet" />
+    <script src="tree_data.js"></script>
+    <script src="tree.js"></script></head>
+<body>
+    <h1>tree demo</h1>
+    <div id="tree" class="tree" style="width:400px; height:500px; border:1px solid #aaa; overflow:auto"></div>
+    <script>
+        $("#tree").tree({ data: treedata.dir_list, isClear: true });
+    </script>
+</body>
+</html>
